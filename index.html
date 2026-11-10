@@ -1,57 +1,154 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilmer Garzón Alfonso, PhD | AI & Data Science</title>
+    <title>Wilmer Garzón Alfonso, PhD | AI, Data Science & Intelligent Systems</title>
+    <meta name="description" content="Investigador Postdoctoral en Inteligencia Artificial y Ciencia de Datos. Especialista en MLOps, RAG, sistemas distribuidos y apoyo a la decisión.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        darkbg: '#0b0f17',
+                        cardbg: '#111827',
+                        borderbg: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            padding: 2rem;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #38bdf8;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            line-height: 1.6;
-        }
-        .badge {
-            display: inline-block;
-            background: #1e293b;
-            border: 1px solid #334155;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            margin: 0.5rem;
-            color: #e2e8f0;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f17; color: #f3f4f6; }
+        .glass-panel { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .gradient-text { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Wilmer Garzón Alfonso, PhD</h1>
-        <p>Investigador Postdoctoral en IA Aplicada (Universidad de Deusto) & Consultor Exec en Ciencia de Datos</p>
-        <div>
-            <span class="badge">Horizon Europe (PRECIOUS / ToNoWaste)</span>
-            <span class="badge">Doble Doctor en Computación e Ingeniería</span>
-            <span class="badge">RAG / LLMs / MLOps</span>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-panel border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <i data-lucide="terminal" class="w-5 h-5 text-brand-500"></i>
+                <span>wilmer_garzon<span class="text-brand-500">.phd</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#perfil" class="hover:text-brand-500 transition-colors">Perfil</a>
+                <a href="#horizon" class="hover:text-brand-500 transition-colors">Horizon Europe</a>
+                <a href="#proyectos" class="hover:text-brand-500 transition-colors">Proyectos & Consultoría</a>
+                <a href="#publicaciones" class="hover:text-brand-500 transition-colors">Publicaciones</a>
+                <a href="#contacto" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold transition-all shadow-lg shadow-brand-600/20">Contacto</a>
+            </div>
         </div>
-        <p style="margin-top: 2rem; font-size: 0.9rem; color: #64748b;">Sitio en construcción — Próximamente nueva versión</p>
-    </div>
-</body>
-</html>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-mono font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Investigador Postdoctoral @ Universidad de Deusto (DeustoTech)
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Bridging Advanced <span class="gradient-text">AI Research</span> & Strategic Industry Solutions.
+                </h1>
+                
+                <p class="text-lg text-gray-400 leading-relaxed max-w-3xl">
+                    Doctor en Ciencias de la Computación (IMT Atlantique, Francia) y Doctor en Ingeniería. Especialista en la operacionalización de Inteligencia Artificial (MLOps, Federated Learning, RAG/LLMs) aplicada a sostenibilidad, salud digital y gobierno inteligente.
+                </p>
+
+                <!-- Action CTAs -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#contacto" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-lg shadow-brand-500/25">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Agendar Asesoría / Contacto
+                    </a>
+                    <a href="https://orcid.org/0000-0002-5920-2278" target="_blank" class="glass-panel hover:bg-gray-800 text-gray-200 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all">
+                        <i data-lucide="award" class="w-4 h-4 text-brand-500"></i> Perfil ORCID
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Summary Card -->
+            <div class="lg:col-span-4">
+                <div class="glass-panel p-6 rounded-2xl border border-gray-800 space-y-6 relative overflow-hidden">
+                    <div class="absolute -top-12 -right-12 w-32 h-32 bg-brand-500/10 rounded-full blur-3xl"></div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-brand-500 to-indigo-600 flex items-center justify-center text-white text-2xl font-bold font-mono">
+                            WG
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Wilmer Garzón Alfonso</h3>
+                            <p class="text-xs text-brand-500 font-mono">Bilbao, España / Colombia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <div class="flex items-center justify-between py-2 border-b border-gray-800">
+                            <span class="text-gray-500">Formación</span>
+                            <span class="font-medium text-white">Doble Doctor (Ph.D.)</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2 border-b border-gray-800">
+                            <span class="text-gray-500">Horizon Europe</span>
+                            <span class="font-medium text-emerald-400">PRECIOUS / ToNoWaste</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2 border-b border-gray-800">
+                            <span class="text-gray-500">Trayectoria</span>
+                            <span class="font-medium text-white">+18 Años de Experiencia</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <span class="text-gray-500">Reconocimientos</span>
+                            <span class="font-medium text-amber-400">NASA Space Apps Coach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Bar -->
+    <section class="py-10 bg-cardbg/50 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-extrabold text-white font-mono">+100</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Citas WoS (Q1/Q2)</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-brand-500 font-mono">3+</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Proyectos Horizon Europe</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-white font-mono">+10</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Tesis de Máster Dirigidas</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-emerald-400 font-mono">18+</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Años Transformación Digital</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizon Europe Highlight -->
+    <section id="horizon" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto
