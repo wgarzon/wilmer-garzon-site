@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilmer Garzón Alfonso, PhD | AI, Data Science & Intelligent Systems</title>
-    <meta name="description" content="Investigador Postdoctoral en Inteligencia Artificial y Ciencia de Datos. Especialista en MLOps, RAG, sistemas distribuidos y apoyo a la decisión.">
+    <title>Wilmer Garzón-Alfonso, PhD | AI, Data Science & Intelligent Systems</title>
+    <meta name="description" content="Applied AI Researcher & Executive Consultant in Artificial Intelligence, Machine Learning, MLOps, and Intelligent Decision Support Systems.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,45 +53,53 @@
                 <i data-lucide="terminal" class="w-5 h-5 text-brand-500"></i>
                 <span>wilmer_garzon<span class="text-brand-500">.phd</span></span>
             </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
-                <a href="#perfil" class="hover:text-brand-500 transition-colors">Perfil</a>
-                <a href="#horizon" class="hover:text-brand-500 transition-colors">Horizon Europe</a>
-                <a href="#proyectos" class="hover:text-brand-500 transition-colors">Proyectos & Consultoría</a>
-                <a href="#publicaciones" class="hover:text-brand-500 transition-colors">Publicaciones</a>
-                <a href="#contacto" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold transition-all shadow-lg shadow-brand-600/20">Contacto</a>
+            <div class="flex items-center space-x-6 text-sm font-medium text-gray-300">
+                <a href="#about" class="hidden md:inline hover:text-brand-500 transition-colors lang-txt" data-en="About" data-es="Perfil">About</a>
+                <a href="#horizon" class="hidden md:inline hover:text-brand-500 transition-colors lang-txt" data-en="Horizon Europe" data-es="Horizon Europe">Horizon Europe</a>
+                <a href="#projects" class="hidden md:inline hover:text-brand-500 transition-colors lang-txt" data-en="Experience & Projects" data-es="Proyectos y Experiencia">Experience & Projects</a>
+                <a href="#publications" class="hidden md:inline hover:text-brand-500 transition-colors lang-txt" data-en="Publications" data-es="Publicaciones">Publications</a>
+                <a href="#contact" class="hidden sm:inline bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold transition-all shadow-lg shadow-brand-600/20 lang-txt" data-en="Contact" data-es="Contacto">Contact</a>
+                
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" onclick="toggleLanguage()" class="flex items-center gap-1.5 bg-gray-800 hover:bg-gray-700 text-brand-500 px-3 py-1.5 rounded-lg border border-gray-700 text-xs font-mono font-bold transition-all">
+                    <i data-lucide="globe" class="w-4 h-4"></i>
+                    <span id="lang-label">EN / ES</span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Hero / Profile Section -->
+    <section id="about" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-8 space-y-6">
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-mono font-medium">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Investigador Postdoctoral @ Universidad de Deusto (DeustoTech)
+                    <span class="lang-txt" data-en="AI & Data Science Researcher | Executive Consultant" data-es="Investigador en IA y Ciencia de Datos | Consultor Ejecutivo">AI & Data Science Researcher | Executive Consultant</span>
                 </div>
                 
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
                     Bridging Advanced <span class="gradient-text">AI Research</span> & Strategic Industry Solutions.
                 </h1>
                 
-                <p class="text-lg text-gray-400 leading-relaxed max-w-3xl">
-                    Doctor en Ciencias de la Computación (IMT Atlantique, Francia) y Doctor en Ingeniería. Especialista en la operacionalización de Inteligencia Artificial (MLOps, Federated Learning, RAG/LLMs) aplicada a sostenibilidad, salud digital y gobierno inteligente.
+                <p class="text-lg text-gray-300 leading-relaxed max-w-3xl lang-txt" 
+                   data-en="Data Science and Artificial Intelligence Researcher holding dual PhD degrees (IMT Atlantique, France / Escuela Colombiana de Ingeniería). Former Director of the Master's Program in Data Science. Specialist in operationalizing AI systems in distributed and regulated environments (MLOps, Federated Learning, Differential Privacy, RAG/LLMs). Integrates scientific excellence with technical leadership in Horizon Europe projects and high-impact technology transfer across GovTech, AgroTech, and Digital Health."
+                   data-es="Investigador en Ciencia de Datos e Inteligencia Artificial con doble doctorado (IMT Atlantique, Francia / Escuela Colombiana de Ingeniería). Ex-Director del Máster en Ciencia de Datos. Especialista en la operacionalización de sistemas de IA en entornos distribuidos y regulados (MLOps, Aprendizaje Federado, Privacidad Diferencial, RAG/LLMs). Combina excelencia científica con liderazgo técnico en proyectos Horizon Europe y transferencia tecnológica de alto impacto en GovTech, AgroTech y Salud Digital.">
+                    Data Science and Artificial Intelligence Researcher holding dual PhD degrees (IMT Atlantique, France / Escuela Colombiana de Ingeniería). Former Director of the Master's Program in Data Science. Specialist in operationalizing AI systems in distributed and regulated environments (MLOps, Federated Learning, Differential Privacy, RAG/LLMs). Integrates scientific excellence with technical leadership in Horizon Europe projects and high-impact technology transfer across GovTech, AgroTech, and Digital Health.
                 </p>
 
                 <!-- Action CTAs -->
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#contacto" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-lg shadow-brand-500/25">
-                        <i data-lucide="mail" class="w-4 h-4"></i> Agendar Asesoría / Contacto
+                    <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-lg shadow-brand-500/25 lang-txt" data-en="Get in Touch / Advisory" data-es="Contacto / Asesorías">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Get in Touch / Advisory
                     </a>
                     <a href="https://orcid.org/0000-0002-5920-2278" target="_blank" class="glass-panel hover:bg-gray-800 text-gray-200 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all">
-                        <i data-lucide="award" class="w-4 h-4 text-brand-500"></i> Perfil ORCID
+                        <i data-lucide="award" class="w-4 h-4 text-brand-500"></i> ORCID Profile
                     </a>
                 </div>
             </div>
 
-            <!-- Profile Summary Card -->
+            <!-- Profile Card -->
             <div class="lg:col-span-4">
                 <div class="glass-panel p-6 rounded-2xl border border-gray-800 space-y-6 relative overflow-hidden">
                     <div class="absolute -top-12 -right-12 w-32 h-32 bg-brand-500/10 rounded-full blur-3xl"></div>
@@ -100,26 +108,26 @@
                             WG
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-white">Wilmer Garzón Alfonso</h3>
-                            <p class="text-xs text-brand-500 font-mono">Bilbao, España / Colombia</p>
+                            <h3 class="text-lg font-bold text-white">Wilmer Garzón-Alfonso, PhD</h3>
+                            <p class="text-xs text-brand-500 font-mono">AI & Data Science Executive</p>
                         </div>
                     </div>
                     
                     <div class="space-y-3 text-sm text-gray-300">
                         <div class="flex items-center justify-between py-2 border-b border-gray-800">
-                            <span class="text-gray-500">Formación</span>
-                            <span class="font-medium text-white">Doble Doctor (Ph.D.)</span>
+                            <span class="text-gray-500 lang-txt" data-en="Education" data-es="Formación">Education</span>
+                            <span class="font-medium text-white">Dual PhD (France / Col)</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2 border-b border-gray-800">
+                            <span class="text-gray-500 lang-txt" data-en="Leadership" data-es="Liderazgo">Leadership</span>
+                            <span class="font-medium text-brand-500 lang-txt" data-en="Master's Program Director" data-es="Dir. Máster Ciencia de Datos">Master's Program Director</span>
                         </div>
                         <div class="flex items-center justify-between py-2 border-b border-gray-800">
                             <span class="text-gray-500">Horizon Europe</span>
                             <span class="font-medium text-emerald-400">PRECIOUS / ToNoWaste</span>
                         </div>
-                        <div class="flex items-center justify-between py-2 border-b border-gray-800">
-                            <span class="text-gray-500">Trayectoria</span>
-                            <span class="font-medium text-white">+18 Años de Experiencia</span>
-                        </div>
                         <div class="flex items-center justify-between py-2">
-                            <span class="text-gray-500">Reconocimientos</span>
+                            <span class="text-gray-500 lang-txt" data-en="Awards" data-es="Reconocimientos">Awards</span>
                             <span class="font-medium text-amber-400">NASA Space Apps Coach</span>
                         </div>
                     </div>
@@ -133,19 +141,19 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
                 <div class="text-3xl font-extrabold text-white font-mono">+100</div>
-                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Citas WoS (Q1/Q2)</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1 lang-txt" data-en="WoS Citations (Q1/Q2)" data-es="Citas WoS (Q1/Q2)">WoS Citations (Q1/Q2)</div>
             </div>
             <div>
                 <div class="text-3xl font-extrabold text-brand-500 font-mono">3+</div>
-                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Proyectos Horizon Europe</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1 lang-txt" data-en="Horizon Europe Projects" data-es="Proyectos Horizon Europe">Horizon Europe Projects</div>
             </div>
             <div>
                 <div class="text-3xl font-extrabold text-white font-mono">+10</div>
-                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Tesis de Máster Dirigidas</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1 lang-txt" data-en="Master's Theses Supervised" data-es="Tesis de Máster Dirigidas">Master's Theses Supervised</div>
             </div>
             <div>
                 <div class="text-3xl font-extrabold text-emerald-400 font-mono">18+</div>
-                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Años Transformación Digital</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1 lang-txt" data-en="Years Experience" data-es="Años de Trayectoria">Years Experience</div>
             </div>
         </div>
     </section>
@@ -154,11 +162,13 @@
     <section id="horizon" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-                <h2 class="text-xs font-mono font-bold text-brand-500 uppercase tracking-wider">Investigación Europea de Alto Impacto</h2>
-                <h3 class="text-3xl font-bold text-white mt-2">Iniciativas Horizon Europe</h3>
+                <h2 class="text-xs font-mono font-bold text-brand-500 uppercase tracking-wider lang-txt" data-en="EU Competitive Research & Innovation" data-es="Investigación Competitiva I+D+i">EU Competitive Research & Innovation</h2>
+                <h3 class="text-3xl font-bold text-white mt-2 lang-txt" data-en="Horizon Europe Initiatives" data-es="Iniciativas Horizon Europe">Horizon Europe Initiatives</h3>
             </div>
-            <p class="text-gray-400 max-w-md mt-4 md:mt-0 text-sm">
-                Desarrollo de modelos de aprendizaje automático y sistemas de soporte a la decisión para la sostenibilidad económica y medioambiental en la Unión Europea.
+            <p class="text-gray-400 max-w-md mt-4 md:mt-0 text-sm lang-txt" 
+               data-en="Co-investigator and technical lead designing AI models, decision-support tools, and predictive algorithms for food loss prevention and sustainability across European consortia."
+               data-es="Co-investigador y líder técnico diseñando modelos de IA, herramientas de soporte a la decisión y algoritmos predictivos para la prevención del desperdicio alimentario en consorcios europeos.">
+                Co-investigator and technical lead designing AI models, decision-support tools, and predictive algorithms for food loss prevention and sustainability across European consortia.
             </p>
         </div>
 
@@ -169,9 +179,11 @@
                     <i data-lucide="leaf" class="w-6 h-6"></i>
                 </div>
                 <h4 class="text-xl font-bold text-white mb-2">PRECIOUS (2024-2028)</h4>
-                <p class="text-xs font-mono text-emerald-400 mb-4">Co-Investigador & AI Lead</p>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Liderazgo en el desarrollo del <em>Predictor Tool</em> para la prevención de pérdidas y desperdicio de alimentos (FLWPR) mediante analítica avanzada y procesamiento de lenguaje natural.
+                <p class="text-xs font-mono text-emerald-400 mb-4 lang-txt" data-en="Co-Investigador & AI Lead" data-es="Co-Investigador y Líder IA">Co-Investigador & AI Lead</p>
+                <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                   data-en="Leading the development of the 'Predictor Tool' for food loss and waste prevention (FLWPR) integrating NLP, automated classification, and advanced machine learning models."
+                   data-es="Liderazgo en el desarrollo del 'Predictor Tool' para la prevención de pérdidas y desperdicio de alimentos (FLWPR) mediante PLN, clasificación automática y modelos de machine learning.">
+                    Leading the development of the 'Predictor Tool' for food loss and waste prevention (FLWPR) integrating NLP, automated classification, and advanced machine learning models.
                 </p>
             </div>
 
@@ -181,9 +193,11 @@
                     <i data-lucide="cpu" class="w-6 h-6"></i>
                 </div>
                 <h4 class="text-xl font-bold text-white mb-2">ToNoWaste (2022-2027)</h4>
-                <p class="text-xs font-mono text-brand-500 mb-4">Co-Líder Técnico WP3</p>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Diseño de soluciones de IA y ciencia de datos para la evaluación holística y toma de decisiones en la reducción del desperdicio en la cadena agroalimentaria europea.
+                <p class="text-xs font-mono text-brand-500 mb-4 lang-txt" data-en="WP3 Technical Co-Lead" data-es="Co-Líder Técnico WP3">WP3 Technical Co-Lead</p>
+                <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                   data-en="Co-leading strategic AI and data management solutions for fresh food supply chain assessment, supporting decision-making across European pilot cities."
+                   data-es="Coliderazgo técnico en el diseño de soluciones de IA y gestión de datos para evaluar cadenas de suministro agroalimentario y apoyar decisiones en ciudades piloto europeas.">
+                    Co-leading strategic AI and data management solutions for fresh food supply chain assessment, supporting decision-making across European pilot cities.
                 </p>
             </div>
 
@@ -193,94 +207,132 @@
                     <i data-lucide="building-2" class="w-6 h-6"></i>
                 </div>
                 <h4 class="text-xl font-bold text-white mb-2">RenoVisor (2025-2029)</h4>
-                <p class="text-xs font-mono text-indigo-400 mb-4">Data Scientist</p>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Integración de simulación de edificios, herramientas participativas y modelos inteligentes para involucrar al ciudadano en los procesos de rehabilitación energética.
+                <p class="text-xs font-mono text-indigo-400 mb-4 font-mono">Data Scientist</p>
+                <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                   data-en="Developing intelligent decision-support tools and citizen-engagement models for energy-efficient building renovation processes across European cities."
+                   data-es="Desarrollo de herramientas inteligentes de soporte a la decisión y modelos de participación ciudadana para la rehabilitación energética de edificios en Europa.">
+                    Developing intelligent decision-support tools and citizen-engagement models for energy-efficient building renovation processes across European cities.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Key Experience & Consulting Portfolio -->
-    <section id="proyectos" class="py-20 bg-cardbg/30 border-t border-gray-800">
+    <!-- Key Experience, Academic Leadership & Research Seedbeds -->
+    <section id="projects" class="py-20 bg-cardbg/30 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-mono font-bold text-brand-500 uppercase tracking-wider">Transferencia Tecnológica & Consultoría</h2>
-                <h3 class="text-3xl font-bold text-white mt-2">Soluciones de IA en Entornos Reales</h3>
-                <p class="text-gray-400 mt-4 text-sm">
-                    Trayectoria demostrada traduciendo necesidades complejas del sector público y privado en arquitecturas escalables basadas en IA.
+                <h2 class="text-xs font-mono font-bold text-brand-500 uppercase tracking-wider lang-txt" data-en="Leadership, Academic Management & Industry Impact" data-es="Liderazgo, Dirección Académica y Transferencia">Leadership, Academic Management & Industry Impact</h2>
+                <h3 class="text-3xl font-bold text-white mt-2 lang-txt" data-en="Academic Leadership & Technology Transfer" data-es="Liderazgo Académico y Transferencia Tecnológica">Academic Leadership & Technology Transfer</h3>
+                <p class="text-gray-400 mt-4 text-sm lang-txt" 
+                   data-en="Proven experience directing academic postgraduate programs, fostering young research talent, and architecting AI solutions for healthcare, public sector, and document processing."
+                   data-es="Experiencia liderando posgrados universitarios, formando talento investigador temprano y diseñando arquitecturas de IA para salud digital, gobierno y procesamiento documental.">
+                    Proven experience directing academic postgraduate programs, fostering young research talent, and architecting AI solutions for healthcare, public sector, and document processing.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- SIS VIDA -->
+                <!-- Master's Direction & Academic Leadership -->
                 <div class="glass-panel p-8 rounded-2xl border border-gray-800 space-y-4">
                     <div class="flex justify-between items-start">
-                        <h4 class="text-xl font-bold text-white">Plataforma SIS VIDA (Salud Digital)</h4>
-                        <span class="px-2.5 py-1 rounded bg-brand-500/10 text-brand-500 text-xs font-mono">RAG + OCR + LLM</span>
+                        <h4 class="text-xl font-bold text-white lang-txt" data-en="Master's Program Director & Academic Leadership" data-es="Dirección de Posgrados y Liderazgo Académico">Master's Program Director & Academic Leadership</h4>
+                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-mono lang-txt" data-en="Higher Ed" data-es="Educación Sup.">Higher Ed</span>
                     </div>
-                    <p class="text-xs text-gray-500 font-mono">Project Manager & AI Research Lead (2025-2026)</p>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Arquitectura e implementación de un sistema de auditoría clínica inteligente para el procesamiento automático de reclamaciones médicas, integrando bases de datos vectoriales y modelos de lenguaje.
+                    <p class="text-xs text-gray-500 font-mono lang-txt" data-en="Director, M.Sc. in Data Science (2023–2026) & Center for Computational Foundations" data-es="Director Maestría en Ciencia de Datos (2023–2026) y Centro de Fundamentos de Computación">Director, M.Sc. in Data Science (2023–2026) & Center for Computational Foundations</p>
+                    <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                       data-en="Led the strategic, academic, and operational management of the Master's in Data Science (68+ graduates). Spearheaded curriculum renewal in Generative AI, MLOps, and Advanced Analytics, strengthening university-industry collaboration."
+                       data-es="Dirección estratégica, académica y operativa del programa de Maestría en Ciencia de Datos (68+ graduados). Lideró la renovación curricular en IA Generativa, MLOps y Analítica Avanzada, fortaleciendo la relación universidad-empresa.">
+                        Led the strategic, academic, and operational management of the Master's in Data Science (68+ graduates). Spearheaded curriculum renewal in Generative AI, MLOps, and Advanced Analytics, strengthening university-industry collaboration.
+                    </p>
+                </div>
+
+                <!-- Research Seedbeds & Mentoring -->
+                <div class="glass-panel p-8 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-bold text-white lang-txt" data-en="Research Seedbeds & Talent Mentoring" data-es="Dirección de Semilleros y Formación de Investigadores">Research Seedbeds & Talent Mentoring</h4>
+                        <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-mono">ACM-ICPC & Delfín</span>
+                    </div>
+                    <p class="text-xs text-gray-500 font-mono lang-txt" data-en="Director: Algorithmics & Analytics/Data Science Seedbeds (2018–2025)" data-es="Director: Semillero de Algoritmia y Semillero de Analítica y Ciencia de Datos (2018–2025)">Director: Algorithmics & Analytics/Data Science Seedbeds (2018–2025)</p>
+                    <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                       data-en="Founded and directed undergraduate research groups focused on competitive programming (ACM-ICPC), Machine Learning, and Quantum AI. International mentor for the Delfín Program and winning coach at the NASA International Space Apps Challenge (2024, 2025)."
+                       data-es="Fundó y dirigió grupos de investigación formativa enfocados en programación competitiva (ACM-ICPC), Aprendizaje Automático e IA Cuántica. Asesor internacional del Programa Delfín y coach ganador del NASA International Space Apps Challenge (2024, 2025).">
+                        Founded and directed undergraduate research groups focused on competitive programming (ACM-ICPC), Machine Learning, and Quantum AI. International mentor for the Delfín Program and winning coach at the NASA International Space Apps Challenge (2024, 2025).
+                    </p>
+                </div>
+
+                <!-- Healthcare AI Auditing -->
+                <div class="glass-panel p-8 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-bold text-white lang-txt" data-en="Intelligent Healthcare Claims Auditing Platform" data-es="Auditoría Inteligente de Reclamaciones de Salud">Intelligent Healthcare Claims Auditing Platform</h4>
+                        <span class="px-2.5 py-1 rounded bg-brand-500/10 text-brand-500 text-xs font-mono">RAG + OCR + LLMs</span>
+                    </div>
+                    <p class="text-xs text-gray-500 font-mono lang-txt" data-en="Project Manager & AI Research Lead (2025–2026)" data-es="Gerente de Proyecto y Líder de Investigación en IA (2025–2026)">Project Manager & AI Research Lead (2025–2026)</p>
+                    <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                       data-en="Architected and deployed an enterprise AI platform for automated medical auditing and healthcare claim validation. Integrated Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), OCR, and vector databases to streamline clinical document processing."
+                       data-es="Diseño e implementación de una solución de IA para la auditoría médica y validación de reclamaciones en salud. Integración de arquitecturas RAG, Large Language Models (LLMs), OCR y bases de datos vectoriales para el procesamiento clínico documental.">
+                        Architected and deployed an enterprise AI platform for automated medical auditing and healthcare claim validation. Integrated Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), OCR, and vector databases to streamline clinical document processing.
                     </p>
                 </div>
 
                 <!-- GovTech Zipaquirá -->
                 <div class="glass-panel p-8 rounded-2xl border border-gray-800 space-y-4">
                     <div class="flex justify-between items-start">
-                        <h4 class="text-xl font-bold text-white">GovTech & Gobierno Digital</h4>
-                        <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-mono">Smart Cities</span>
+                        <h4 class="text-xl font-bold text-white lang-txt" data-en="GovTech & Public Sector Modernization" data-es="GovTech y Modernización del Sector Público">GovTech & Public Sector Modernization</h4>
+                        <span class="px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 text-xs font-mono">Smart Government</span>
                     </div>
-                    <p class="text-xs text-gray-500 font-mono">Asesor de Transformación Digital (2021-2025)</p>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Modernización institucional de la Alcaldía de Zipaquirá. Automatización de trámites ciudadanos, analítica prescriptiva y modelos para detección de riesgos en contratación pública.
-                    </p>
-                </div>
-
-                <!-- ECAPTURE & ReadSoft -->
-                <div class="glass-panel p-8 rounded-2xl border border-gray-800 space-y-4">
-                    <div class="flex justify-between items-start">
-                        <h4 class="text-xl font-bold text-white">Automatización Documental (IDP/OCR)</h4>
-                        <span class="px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 text-xs font-mono">Enterprise AI</span>
-                    </div>
-                    <p class="text-xs text-gray-500 font-mono">Cofundador & CTO @ ECAPTURE / Consultor ReadSoft</p>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Más de 10 años desplegando proyectos de captura inteligente para clientes como Registraduría Nacional, Ecopetrol, Carvajal y la Federación Nacional de Cafeteros.
-                    </p>
-                </div>
-
-                <!-- Academic Leadership -->
-                <div class="glass-panel p-8 rounded-2xl border border-gray-800 space-y-4">
-                    <div class="flex justify-between items-start">
-                        <h4 class="text-xl font-bold text-white">Dirección Académica & Summits</h4>
-                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-mono">Liderazgo</span>
-                    </div>
-                    <p class="text-xs text-gray-500 font-mono">Ex-Director Máster en Ciencia de Datos / Fundador Colombia Data Summit</p>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Diseño curricular de programas de posgrado en IA, dirección del Center for Computational Foundations y creación del congreso de referencia nacional en analítica de datos.
+                    <p class="text-xs text-gray-500 font-mono lang-txt" data-en="Digital Transformation Advisor (2021–2025)" data-es="Asesor de Transformación Digital (2021–2025)">Digital Transformation Advisor (2021–2025)</p>
+                    <p class="text-gray-400 text-sm leading-relaxed lang-txt" 
+                       data-en="Advised municipal administration on digital government, citizen service automation, public procurement fraud-risk mining, and evidence-based decision-making."
+                       data-es="Asesoría a la administración municipal en gobierno digital, automatización de trámites ciudadanos, detección de riesgos de corrupción en contratación pública y toma de decisiones basada en datos.">
+                        Advised municipal administration on digital government, citizen service automation, public procurement fraud-risk mining, and evidence-based decision-making.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Selected Publications -->
-    <section id="publicaciones" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-                <h2 class="text-xs font-mono font-bold text-brand-500 uppercase tracking-wider">Producción Científica</h2>
-                <h3 class="text-3xl font-bold text-white mt-2">Publicaciones Destacadas</h3>
+                <h2 class="text-xs font-mono font-bold text-brand-500 uppercase tracking-wider lang-txt" data-en="Peer-Reviewed Articles & Conference Proceedings" data-es="Artículos Indexados y Conferencias">Peer-Reviewed Articles & Conference Proceedings</h2>
+                <h3 class="text-3xl font-bold text-white mt-2 lang-txt" data-en="Selected Publications" data-es="Publicaciones Destacadas">Selected Publications</h3>
             </div>
             <a href="https://scholar.google.com/citations?user=0000-0002-5920-2278" target="_blank" class="text-sm font-mono text-brand-500 hover:underline flex items-center gap-1 mt-4 md:mt-0">
-                Ver todo en Google Scholar <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                Google Scholar Profile <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
             </a>
         </div>
 
         <div class="space-y-4">
-            <!-- Pub 1 -->
+            <!-- Pub 2026 - Journal of Environmental Management -->
             <div class="glass-panel p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div class="space-y-1">
                     <div class="flex items-center gap-2 text-xs font-mono text-emerald-400">
+                        <span>Journal of Environmental Management</span> • <span class="bg-emerald-500/10 px-2 py-0.5 rounded text-emerald-400 font-bold">Accepted Nov 2026</span> • <span>First & Corresponding Author</span>
+                    </div>
+                    <h4 class="text-base font-semibold text-white">Beyond Single-Stage Classification: A Hybrid AI–Expert Validation Framework for Environmental Monitoring of European Food Waste Prevention</h4>
+                    <p class="text-xs text-gray-400">Garzón-Alfonso, W., Amador-Cervera, M., Cruz-Elejalde, H., Alonso-Vicario, A. (2026)</p>
+                </div>
+                <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs font-mono font-semibold self-start md:self-auto">In Press</span>
+            </div>
+
+            <!-- Pub 2026 - Applied Network Science -->
+            <div class="glass-panel p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2 text-xs font-mono text-brand-500">
+                        <span>Applied Network Science</span> • <span>Springer Nature</span> • <span>Oct 2026</span>
+                    </div>
+                    <h4 class="text-base font-semibold text-white">Beyond frequencies: a cross-national network analysis of basic skills in Latin American higher education</h4>
+                    <p class="text-xs text-gray-400">Correa, J. C., Monge-Rogel, R., Panes-Martínez, M., … Garzón-Alfonso, W., … García-Chitiva, M. (2026)</p>
+                </div>
+                <a href="https://link.springer.com/article/10.1007/s41109-026-00832-0" target="_blank" class="glass-panel hover:bg-gray-800 px-4 py-2 rounded-lg text-xs font-mono text-gray-200 flex items-center gap-1 self-start md:self-auto">
+                    Springer Link <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+
+            <!-- Pub 2026 - Array -->
+            <div class="glass-panel p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2 text-xs font-mono text-indigo-400">
                         <span>Array (Elsevier)</span> • <span>Q1 SJR / ESCI</span> • <span>2026</span>
                     </div>
                     <h4 class="text-base font-semibold text-white">Classifying and mining design diagrams in source code repositories using transfer learning</h4>
@@ -291,10 +343,10 @@
                 </a>
             </div>
 
-            <!-- Pub 2 -->
+            <!-- Pub 2025 - SERA Quantum AI -->
             <div class="glass-panel p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div class="space-y-1">
-                    <div class="flex items-center gap-2 text-xs font-mono text-brand-500">
+                    <div class="flex items-center gap-2 text-xs font-mono text-amber-400">
                         <span>SERA (IEEE/ACIS)</span> • <span>Quantum AI</span> • <span>2025</span>
                     </div>
                     <h4 class="text-base font-semibold text-white">Generation of 3D Distributions Using Wasserstein Distance in Hybrid Quantum-Classical GANs</h4>
@@ -305,25 +357,11 @@
                 </a>
             </div>
 
-            <!-- Pub 3 -->
+            <!-- Pub 2019 - JRCS -->
             <div class="glass-panel p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div class="space-y-1">
-                    <div class="flex items-center gap-2 text-xs font-mono text-indigo-400">
-                        <span>Informatics in Medicine Unlocked</span> • <span>Q2 SJR</span> • <span>2022</span>
-                    </div>
-                    <h4 class="text-base font-semibold text-white">A taxonomy of tools and approaches for distributed genomic analyses</h4>
-                    <p class="text-xs text-gray-400">Garzón, W., Benavides, L., Gaignard, A., Redon, R., Südholt, M.</p>
-                </div>
-                <a href="https://doi.org/10.1016/j.imu.2022.101024" target="_blank" class="glass-panel hover:bg-gray-800 px-4 py-2 rounded-lg text-xs font-mono text-gray-200 flex items-center gap-1 self-start md:self-auto">
-                    DOI <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-            </div>
-
-            <!-- Pub 4 -->
-            <div class="glass-panel p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div class="space-y-1">
-                    <div class="flex items-center gap-2 text-xs font-mono text-amber-400">
-                        <span>Journal of Retailing and Consumer Services</span> • <span>+108 Citas WoS / Q1 SJR</span> • <span>2019</span>
+                    <div class="flex items-center gap-2 text-xs font-mono text-gray-400">
+                        <span>Journal of Retailing and Consumer Services</span> • <span>+108 WoS Citations / Q1 SJR</span> • <span>2019</span>
                     </div>
                     <h4 class="text-base font-semibold text-white">Evaluation of collaborative consumption of food delivery services through web mining</h4>
                     <p class="text-xs text-gray-400">Correa, J. C., Garzón, W., Brooker, P., et al.</p>
@@ -336,21 +374,23 @@
     </section>
 
     <!-- Contact & Advisory Section -->
-    <section id="contacto" class="py-20 bg-cardbg/50 border-t border-gray-800">
+    <section id="contact" class="py-20 bg-cardbg/50 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-            <h2 class="text-3xl font-bold text-white">¿Interesado en Colaboración Académica o Asesoría?</h2>
-            <p class="text-gray-400 text-sm leading-relaxed max-w-2xl mx-auto">
-                Disponible para oportunidades de representación institucional, proyectos europeos de I+D+i, consultoría ejecutiva en IA/MLOps y ponencias internacionales.
+            <h2 class="text-3xl font-bold text-white lang-txt" data-en="Interested in Academic Collaboration or Consulting?" data-es="¿Interesado en Colaboración Académica o Asesoría?">Interested in Academic Collaboration or Consulting?</h2>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-2xl mx-auto lang-txt" 
+               data-en="Open for institutional representation, Horizon Europe R&D projects, executive AI/MLOps consulting, and keynote speaking engagements."
+               data-es="Disponible para representación institucional, proyectos europeos de I+D+i, consultoría ejecutiva en IA/MLOps y conferencias internacionales.">
+                Open for institutional representation, Horizon Europe R&D projects, executive AI/MLOps consulting, and keynote speaking engagements.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
-                <a href="mailto:wilmer.garzon@deusto.es" class="glass-panel p-4 rounded-xl border border-gray-800 hover:border-brand-500/50 flex items-center gap-4 transition-all">
+                <a href="mailto:wilmer.garzon@escuelaing.edu.co" class="glass-panel p-4 rounded-xl border border-gray-800 hover:border-brand-500/50 flex items-center gap-4 transition-all">
                     <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center">
                         <i data-lucide="mail" class="w-5 h-5"></i>
                     </div>
                     <div>
-                        <div class="text-xs text-gray-500 font-mono">Contacto Académico</div>
-                        <div class="text-sm font-semibold text-white">wilmer.garzon@deusto.es</div>
+                        <div class="text-xs text-gray-500 font-mono lang-txt" data-en="Academic Email" data-es="Correo Académico">Academic Email</div>
+                        <div class="text-sm font-semibold text-white">wilmer.garzon@escuelaing.edu.co</div>
                     </div>
                 </a>
 
@@ -359,14 +399,13 @@
                         <i data-lucide="briefcase" class="w-5 h-5"></i>
                     </div>
                     <div>
-                        <div class="text-xs text-gray-500 font-mono">Consultoría / Asesorías</div>
+                        <div class="text-xs text-gray-500 font-mono lang-txt" data-en="Executive & Advisory" data-es="Consultoría y Asesorías">Executive & Advisory</div>
                         <div class="text-sm font-semibold text-white">wgarzon@gmail.com</div>
                     </div>
                 </a>
             </div>
 
             <div class="pt-6 flex justify-center gap-6 text-gray-400">
-                <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
                 <a href="https://github.com/wgarzon" target="_blank" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
                 <a href="https://orcid.org/0000-0002-5920-2278" target="_blank" class="hover:text-white transition-colors"><i data-lucide="award" class="w-5 h-5"></i></a>
             </div>
@@ -375,10 +414,29 @@
 
     <!-- Footer -->
     <footer class="py-8 text-center text-xs text-gray-600 font-mono border-t border-gray-800/50">
-        © 2026 Wilmer Garzón Alfonso, PhD. Todos los derechos reservados.
+        © 2026 Wilmer Garzón-Alfonso, PhD. All rights reserved.
     </footer>
 
+    <!-- Script for Dynamic Language Switcher (EN / ES) -->
     <script>
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            document.documentElement.lang = currentLang;
+
+            // Update text elements with data attributes
+            const elements = document.querySelectorAll('.lang-txt');
+            elements.forEach(el => {
+                if (el.dataset[currentLang]) {
+                    el.innerHTML = el.dataset[currentLang];
+                }
+            });
+
+            // Update toggle button text
+            document.getElementById('lang-label').innerText = currentLang === 'en' ? 'EN / ES' : 'ES / EN';
+        }
+
         lucide.createIcons();
     </script>
 </body>
